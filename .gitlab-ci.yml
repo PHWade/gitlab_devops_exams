@@ -1,0 +1,13 @@
+stages:
+  - test
+  - build
+ # - deploy_dev
+ # - deploy_staging
+ # - deplo_qa
+  - deploy_prod
+
+test:
+  image: peripetie/users:latest
+
+deploy_prod:
+  when: manual
